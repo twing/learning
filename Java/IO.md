@@ -72,16 +72,31 @@ InputStream类常用方法
 
 <table border="1">
 <tr>
-<td>row 1, cell 1</td>
-<td>row 1, cell 2</td>
+<th>方法或常量</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 <tr>
-<td>row 2, cell 1</td>
-<td>row 2, cell 2</td>
+<td>public int available() throws IOException</td>
+<td>普通</td>
+<td>可以取得输入文件的大小</td>
+</tr>
+<tr>
+<td>public void close() throws IOException</td>
+<td>普通</td>
+<td>变比输入流</td>
+</tr>
+<tr>
+<td>public abstract int read() throws IOException</td>
+<td>普通</td>
+<td>读取内容，以数字的方式读取</td>
+</tr>
+<tr>
+<td>public int read(byte[] b) throws IOException</td>
+<td>普通</td>
+<td>将内容读到byte数组之中，同时返回读入的个数</td>
 </tr>
 </table>
-
-
 
 
 
