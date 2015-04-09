@@ -67,9 +67,6 @@ Byte是字节，肯定使用字节流操作，所有的数据基本上都可以�
 	public FileInputStream(File file) throws FileNotFoundException
 
 InputStream类常用方法
-
-方法或常量
-
 <table border="1">
 <tr>
 <th>方法或常量</th>
