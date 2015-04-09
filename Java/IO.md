@@ -95,9 +95,48 @@ InputStream类常用方法
 </tr>
 </table>
 
+字符流
+
+	在程序中一个字符等于2个字节，那么Java提供了Reader，Writer两个专门操作字符流的类
+	字符输出流：Writer
+	字符输入流：Reader
 
 
+<table border='1'>
+<tr>
+<th>方法或常量</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+<tr>
+<th>public abstract void close() throws IOException</th>
+<th>普通</th>
+<th>关闭输入流</th>
+</tr>
+<tr>
+<th>public void write(String str) throws IOException</th>
+<th>普通</th>
+<th>将字符串输出</th>
+</tr>
+<tr>
+<th>public void write(char[] cbuf) throws IOException</th>
+<th>普通</th>
+<th>将字符数组输出</th>
+</tr>
+<tr>
+<th>public abstract void flush() throws IOException</th>
+<th>普通</th>
+<th>强制性情况缓存</th>
+</tr>
+</table>
 
+字符流可以直接输出字符串，不要像字节流那样转换为字符串才可输出
+
+字节流和字符流的区别
+
+字节流和字符流使用是非常相似的。
+
+字符在内存中形成的，字节流在操作的是本身，是不会用到缓冲区的，与文件本身直接操作的，而字符流在操作的时候是使用到缓冲区
 
 
 
